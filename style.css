@@ -1,0 +1,45 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: black;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.feed {
+  height: 100vh;
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.short {
+  position: relative;
+  height: 100vh;
+  scroll-snap-align: start;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.ui {
+  position: absolute;
+  right: 15px;
+  bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.ui button {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 28px;
+}
